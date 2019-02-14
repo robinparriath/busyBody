@@ -8,17 +8,19 @@ import java.util.Random;
 
 /**
  * @author      Robin Parriath robinparriath@gmail.com
- * @version     0.1
+ * @version     0.1.1
  * @since       0.1
  */
 public class Fidget {
 
 	/**
-	 * Randomly move the cursor within 5 square pixels per 0 to 10 seconds 
+	 * Randomly move the cursor within 5 square pixels each 0 to 10 seconds 
 	 * <p>
-	 * Move the cursor
-	 *  * 5 pixels left or right, covering a 5 square pixel area
-	 *  * Any interval between 0 and 10 seconds
+	 * Move the cursor<ul>
+	 * 
+	 * 	<li>5 pixels left or right, covering a 5 square pixel area</li>
+	 *  <li>Any interval between 0 and 10 seconds</li>
+	 *  </ul>
 	 * </p>
 	 * The idea behind this is to keep the screen active.
 	 * Keeps my screen active while I wait for my jobs to complete.
@@ -30,8 +32,8 @@ public class Fidget {
 	 * if you forget that it was running.
 	 * 
 	 * @param args : Standard console stuff. Any arguments will be ignored.
-	 * @throws AWTException : needed by the java.awt.Robot class
-	 * @throws InterruptedException : java.lang.Thread throws this out
+	 * @throws AWTException : needed by java.awt.Robot class
+	 * @throws InterruptedException : needed by java.lang.Thread
 	 */
 	public static void main(String[] args) throws AWTException, InterruptedException {
 		Robot robot = new Robot();
